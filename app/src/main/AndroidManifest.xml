@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.itbird">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApplication">
+        <activity
+            android:name="com.itbird.hook.HookTestActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="com.itbird.handlerIPC.HandleIPCMusicPlayService"
+            android:exported="true"
+            android:process=":handlerIPC" />
+        <activity android:name="com.itbird.eventbus.EventTest2Activity" />
+        <activity android:name="com.itbird.handlerIPC.HandleIPCTestActivity" />
+        <activity android:name="com.itbird.binder.BinderClientTestActivity" />
+
+        <activity android:name="com.itbird.fragment.FragmentTestActivity" />
+        <activity android:name="com.itbird.task.MainTestActivity" />
+        <activity android:name="com.itbird.task.ThirdTestActivity" />
+        <activity android:name="com.itbird.task.SecondTestActivity" />
+
+        <activity android:name="com.itbird.handlerThread.IntentServiceTestActivity" />
+        <activity android:name="com.itbird.handlerThread.HandlerThreadTestActivity" />
+
+        <service android:name=".handlerThread.DownloadImageService" />
+
+        <activity android:name="com.itbird.bitmapOOM.ImageViewLoadBitmapTestActivity" />
+        <activity android:name="com.itbird.allowBackUp.AllowBackUpTestLoginActivity" />
+        <activity android:name="com.itbird.allowBackUp.AllowBackUpTestSecondActivity" />
+    </application>
+
+</manifest>

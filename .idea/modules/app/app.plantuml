@@ -1,0 +1,574 @@
+@startuml
+
+title __MY_APPLICATION.APP's Class Diagram__\n
+
+  namespace com.itbird {
+    class com.itbird.APP {
+    }
+  }
+  
+
+  namespace com.itbird {
+    class com.itbird.BuildConfig {
+    }
+  }
+  
+
+  namespace com.itbird {
+    namespace allowBackUp {
+      class com.itbird.allowBackUp.AllowBackUpTestLoginActivity {
+      }
+    }
+  }
+  
+
+  namespace com.itbird {
+    namespace allowBackUp {
+      class com.itbird.allowBackUp.AllowBackUpTestSecondActivity {
+      }
+    }
+  }
+  
+
+  namespace com.itbird {
+    namespace binder {
+      class com.itbird.binder.BinderClientTestActivity {
+      }
+    }
+  }
+  
+
+  namespace com.itbird {
+    namespace binder {
+      class com.itbird.binder.MyMusicPlayService {
+      }
+    }
+  }
+  
+
+  namespace com.itbird {
+    namespace bitmapOOM {
+      class com.itbird.bitmapOOM.BitmapUtils {
+      }
+    }
+  }
+  
+
+  namespace com.itbird {
+    namespace bitmapOOM {
+      class com.itbird.bitmapOOM.ImageViewLoadBitmapTestActivity {
+      }
+    }
+  }
+  
+
+  namespace com.itbird {
+    namespace design.chain {
+      class com.itbird.design.chain.Client {
+      }
+    }
+  }
+  
+
+  namespace com.itbird {
+    namespace design.chain {
+      abstract class com.itbird.design.chain.Handler {
+      }
+    }
+  }
+  
+
+  namespace com.itbird {
+    namespace design.chain {
+      class com.itbird.design.chain.Request {
+      }
+    }
+  }
+  
+
+  namespace com.itbird {
+    namespace design.chain {
+      class com.itbird.design.chain.RequestHandler1 {
+      }
+    }
+  }
+  
+
+  namespace com.itbird {
+    namespace design.chain {
+      class com.itbird.design.chain.RequestHandler2 {
+      }
+    }
+  }
+  
+
+  namespace com.itbird {
+    namespace design.chain {
+      class com.itbird.design.chain.RequestHandler3 {
+      }
+    }
+  }
+  
+
+  namespace com.itbird {
+    namespace design.chain {
+      namespace upgrade {
+        class com.itbird.design.chain.upgrade.ASystemUpgradeRequestHandler {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.itbird {
+    namespace design.chain {
+      namespace upgrade {
+        class com.itbird.design.chain.upgrade.BSystemUpgradeRequestHandler {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.itbird {
+    namespace design.chain {
+      namespace upgrade {
+        class com.itbird.design.chain.upgrade.CSystemUpgradeRequestHandler {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.itbird {
+    namespace design.chain {
+      namespace upgrade {
+        class com.itbird.design.chain.upgrade.InitUpgradeRequestHandler {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.itbird {
+    namespace design.chain {
+      namespace upgrade {
+        interface com.itbird.design.chain.upgrade.UpgradeErrorCode {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.itbird {
+    namespace design.chain {
+      namespace upgrade {
+        class com.itbird.design.chain.upgrade.UpgradeManager {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.itbird {
+    namespace design.chain {
+      namespace upgrade {
+        class com.itbird.design.chain.upgrade.UpgradeRequest {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.itbird {
+    namespace design.chain {
+      namespace upgrade {
+        abstract class com.itbird.design.chain.upgrade.UpgradeRequestHandler {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.itbird {
+    namespace design.chain {
+      namespace upgrade {
+        interface com.itbird.design.chain.upgrade.UpgradeResultObservable {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.itbird {
+    namespace design.chain {
+      namespace upgrade {
+        class com.itbird.design.chain.upgrade.UpgradeResultObservableAdapter {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.itbird {
+    namespace fragment {
+      class com.itbird.fragment.BlankFragment {
+      }
+    }
+  }
+  
+
+  namespace com.itbird {
+    namespace fragment {
+      class com.itbird.fragment.FragmentTestActivity {
+      }
+    }
+  }
+  
+
+  namespace com.itbird {
+    namespace handlerIPC {
+      class com.itbird.handlerIPC.HandleIPCMusicPlayService {
+      }
+    }
+  }
+  
+
+  namespace com.itbird {
+    namespace handlerIPC {
+      class com.itbird.handlerIPC.HandleIPCTestActivity {
+      }
+    }
+  }
+  
+
+  namespace com.itbird {
+    namespace handlerThread {
+      class com.itbird.handlerThread.DownloadImageService {
+      }
+    }
+  }
+  
+
+  namespace com.itbird {
+    namespace handlerThread {
+      class com.itbird.handlerThread.HandlerThreadTestActivity {
+      }
+    }
+  }
+  
+
+  namespace com.itbird {
+    namespace handlerThread {
+      class com.itbird.handlerThread.IntentServiceTestActivity {
+      }
+    }
+  }
+  
+
+  namespace com.itbird {
+    namespace imageloader {
+      class com.itbird.imageloader.DiskImageCache {
+      }
+    }
+  }
+  
+
+  namespace com.itbird {
+    namespace imageloader {
+      interface com.itbird.imageloader.ImageCache {
+      }
+    }
+  }
+  
+
+  namespace com.itbird {
+    namespace imageloader {
+      class com.itbird.imageloader.ImageLoader {
+      }
+    }
+  }
+  
+
+  namespace com.itbird {
+    namespace imageloader {
+      class com.itbird.imageloader.ImageLoaderTestActivity {
+      }
+    }
+  }
+  
+
+  namespace com.itbird {
+    namespace imageloader {
+      class com.itbird.imageloader.MemoryImageCache {
+      }
+    }
+  }
+  
+
+  namespace com.itbird {
+    namespace imageloader {
+      class com.itbird.imageloader.MymageCache {
+      }
+    }
+  }
+  
+
+  namespace com.itbird {
+    namespace music {
+      interface com.itbird.music.IMusicFuction {
+      }
+    }
+  }
+  
+
+  namespace com.itbird {
+    namespace mvp.google {
+      interface com.itbird.mvp.google.BasePresenter {
+      }
+    }
+  }
+  
+
+  namespace com.itbird {
+    namespace mvp.google {
+      interface com.itbird.mvp.google.BaseView {
+      }
+    }
+  }
+  
+
+  namespace com.itbird {
+    namespace mvp.google {
+      interface com.itbird.mvp.google.TaskDetailContract {
+      }
+    }
+  }
+  
+
+  namespace com.itbird {
+    namespace mvp.google {
+      class com.itbird.mvp.google.TaskGoogleActivity {
+      }
+    }
+  }
+  
+
+  namespace com.itbird {
+    namespace mvp.google {
+      class com.itbird.mvp.google.TaskGooglePresenter {
+      }
+    }
+  }
+  
+
+  namespace com.itbird {
+    namespace mvp.my {
+      abstract class com.itbird.mvp.my.BaseActivity {
+      }
+    }
+  }
+  
+
+  namespace com.itbird {
+    namespace mvp.my {
+      abstract class com.itbird.mvp.my.BasePresenter {
+      }
+    }
+  }
+  
+
+  namespace com.itbird {
+    namespace mvp.my {
+      interface com.itbird.mvp.my.IPresenter {
+      }
+    }
+  }
+  
+
+  namespace com.itbird {
+    namespace mvp.my {
+      interface com.itbird.mvp.my.IView {
+      }
+    }
+  }
+  
+
+  namespace com.itbird {
+    namespace mvp.my {
+      class com.itbird.mvp.my.TaskMyActivity {
+      }
+    }
+  }
+  
+
+  namespace com.itbird {
+    namespace mvp.my {
+      interface com.itbird.mvp.my.TaskMyContract {
+      }
+    }
+  }
+  
+
+  namespace com.itbird {
+    namespace mvp.my {
+      class com.itbird.mvp.my.TaskMyPresenter {
+      }
+    }
+  }
+  
+
+  namespace com.itbird {
+    namespace task {
+      class com.itbird.task.MainTestActivity {
+      }
+    }
+  }
+  
+
+  namespace com.itbird {
+    namespace task {
+      class com.itbird.task.SecondTestActivity {
+      }
+    }
+  }
+  
+
+  namespace com.itbird {
+    namespace task {
+      class com.itbird.task.ThirdTestActivity {
+      }
+    }
+  }
+  
+
+  namespace com.itbird {
+    namespace view {
+      class com.itbird.view.CircleImageView {
+      }
+    }
+  }
+  
+
+  namespace com.itbird {
+    namespace view {
+      class com.itbird.view.FlowLayout {
+      }
+    }
+  }
+  
+
+  namespace com.itbird {
+    namespace view {
+      class com.itbird.view.RoundIRect {
+      }
+    }
+  }
+  
+
+  namespace com.itbird {
+    namespace view {
+      class com.itbird.view.ViewTestActivity {
+      }
+    }
+  }
+  
+
+  namespace com.itbird {
+    namespace view {
+      namespace vent {
+        class com.itbird.viewEvent.MyLayout {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.itbird {
+    namespace view {
+      namespace vent {
+        class com.itbird.viewEvent.MyView {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.itbird {
+    namespace view {
+      namespace vent {
+        class com.itbird.viewEvent.ViewEventTestActivity {
+        }
+      }
+    }
+  }
+  
+
+  com.itbird.APP -up-|> android.app.Application
+  com.itbird.allowBackUp.AllowBackUpTestLoginActivity -up-|> androidx.appcompat.app.AppCompatActivity
+  com.itbird.allowBackUp.AllowBackUpTestSecondActivity -up-|> androidx.appcompat.app.AppCompatActivity
+  com.itbird.binder.BinderClientTestActivity -up-|> androidx.appcompat.app.AppCompatActivity
+  com.itbird.binder.MyMusicPlayService -up-|> android.app.Service
+  com.itbird.binder.MyMusicPlayService o-- com.itbird.music.IMusicFuction.Stub : fuction
+  com.itbird.bitmapOOM.ImageViewLoadBitmapTestActivity -up-|> androidx.appcompat.app.AppCompatActivity
+  com.itbird.design.chain.Client -up-|> androidx.appcompat.app.AppCompatActivity
+  com.itbird.design.chain.Handler o-- com.itbird.design.chain.Handler : next
+  com.itbird.design.chain.RequestHandler1 -up-|> com.itbird.design.chain.Handler
+  com.itbird.design.chain.RequestHandler2 -up-|> com.itbird.design.chain.Handler
+  com.itbird.design.chain.RequestHandler3 -up-|> com.itbird.design.chain.Handler
+  com.itbird.design.chain.upgrade.ASystemUpgradeRequestHandler -up-|> com.itbird.design.chain.upgrade.UpgradeRequestHandler
+  com.itbird.design.chain.upgrade.BSystemUpgradeRequestHandler -up-|> com.itbird.design.chain.upgrade.UpgradeRequestHandler
+  com.itbird.design.chain.upgrade.CSystemUpgradeRequestHandler -up-|> com.itbird.design.chain.upgrade.UpgradeRequestHandler
+  com.itbird.design.chain.upgrade.InitUpgradeRequestHandler -up-|> com.itbird.design.chain.upgrade.UpgradeRequestHandler
+  com.itbird.design.chain.upgrade.UpgradeManager o-- com.itbird.design.chain.upgrade.UpgradeResultObservableAdapter : mAdapter
+  com.itbird.design.chain.upgrade.UpgradeRequestHandler o-- com.itbird.design.chain.upgrade.UpgradeRequestHandler : nextHandler
+  com.itbird.design.chain.upgrade.UpgradeResultObservableAdapter .up.|> com.itbird.design.chain.upgrade.UpgradeResultObservable
+  com.itbird.design.chain.upgrade.UpgradeResultObservableAdapter -up-|> android.database.Observable
+  com.itbird.fragment.BlankFragment -up-|> androidx.fragment.app.Fragment
+  com.itbird.fragment.FragmentTestActivity -up-|> androidx.fragment.app.FragmentActivity
+  com.itbird.handlerIPC.HandleIPCMusicPlayService -up-|> android.app.Service
+  com.itbird.handlerIPC.HandleIPCTestActivity -up-|> androidx.appcompat.app.AppCompatActivity
+  com.itbird.handlerThread.DownloadImageService -up-|> android.app.IntentService
+  com.itbird.handlerThread.HandlerThreadTestActivity -up-|> androidx.appcompat.app.AppCompatActivity
+  com.itbird.handlerThread.IntentServiceTestActivity -up-|> androidx.appcompat.app.AppCompatActivity
+  com.itbird.imageloader.DiskImageCache .up.|> com.itbird.imageloader.ImageCache
+  com.itbird.imageloader.ImageLoader o-- com.itbird.imageloader.ImageCache : mImageCache
+  com.itbird.imageloader.ImageLoaderTestActivity -up-|> androidx.appcompat.app.AppCompatActivity
+  com.itbird.imageloader.MemoryImageCache .up.|> com.itbird.imageloader.ImageCache
+  com.itbird.imageloader.MymageCache .up.|> com.itbird.imageloader.ImageCache
+  com.itbird.imageloader.MymageCache o-- com.itbird.imageloader.DiskImageCache : diskImageCache
+  com.itbird.imageloader.MymageCache o-- com.itbird.imageloader.MemoryImageCache : memoryImageCache
+  com.itbird.mvp.google.TaskGoogleActivity .up.|> com.itbird.mvp.google.TaskDetailContract.View
+  com.itbird.mvp.google.TaskGoogleActivity -up-|> androidx.appcompat.app.AppCompatActivity
+  com.itbird.mvp.google.TaskGoogleActivity o-- com.itbird.mvp.google.TaskDetailContract.Presenter : mPresenter
+  com.itbird.mvp.google.TaskGooglePresenter .up.|> com.itbird.mvp.google.TaskDetailContract.Presenter
+  com.itbird.mvp.google.TaskGooglePresenter o-- com.itbird.mvp.google.TaskDetailContract.View : mView
+  com.itbird.mvp.my.BaseActivity .up.|> com.itbird.mvp.my.IView
+  com.itbird.mvp.my.BaseActivity -up-|> android.app.Activity
+  com.itbird.mvp.my.BasePresenter .up.|> com.itbird.mvp.my.IPresenter
+  com.itbird.mvp.my.BasePresenter o-- V : mView
+  com.itbird.mvp.my.TaskMyActivity .up.|> com.itbird.mvp.my.TaskMyContract.View
+  com.itbird.mvp.my.TaskMyActivity -up-|> com.itbird.mvp.my.BaseActivity
+  com.itbird.mvp.my.TaskMyActivity o-- com.itbird.mvp.my.TaskMyPresenter : mPresenter
+  com.itbird.mvp.my.TaskMyPresenter .up.|> com.itbird.mvp.my.TaskMyContract.Presenter
+  com.itbird.mvp.my.TaskMyPresenter -up-|> com.itbird.mvp.my.BasePresenter
+  com.itbird.task.MainTestActivity -up-|> androidx.appcompat.app.AppCompatActivity
+  com.itbird.task.SecondTestActivity -up-|> androidx.appcompat.app.AppCompatActivity
+  com.itbird.task.ThirdTestActivity -up-|> androidx.appcompat.app.AppCompatActivity
+  com.itbird.view.CircleImageView -up-|> androidx.appcompat.widget.AppCompatImageView
+  com.itbird.view.FlowLayout -up-|> android.view.ViewGroup
+  com.itbird.view.RoundIRect -up-|> android.view.View
+  com.itbird.view.ViewTestActivity -up-|> androidx.appcompat.app.AppCompatActivity
+  com.itbird.viewEvent.MyLayout -up-|> android.widget.LinearLayout
+  com.itbird.viewEvent.MyView -up-|> androidx.appcompat.widget.AppCompatImageView
+  com.itbird.viewEvent.ViewEventTestActivity -up-|> androidx.appcompat.app.AppCompatActivity
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml
