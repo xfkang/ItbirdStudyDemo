@@ -3,6 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/workspace/ItbirdStudyDemo/app/src/main/res/layout/allowbackup_test_login.xml" value="0.33541666666666664" />
+        <entry key="..\:/workspace/ItbirdStudyDemo/app/src/main/res/layout/allowbackup_test_second.xml" value="0.33541666666666664" />
+        <entry key="..\:/workspace/ItbirdStudyDemo/app/src/main/res/layout/fragment__dynamic_test.xml" value="0.33541666666666664" />
+        <entry key="..\:/workspace/ItbirdStudyDemo/app/src/main/res/layout/fragment__viewpager_test.xml" value="0.33541666666666664" />
+        <entry key="..\:/workspace/ItbirdStudyDemo/app/src/main/res/layout/fragment_blank.xml" value="0.33541666666666664" />
+        <entry key="..\:/workspace/ItbirdStudyDemo/app/src/main/res/layout/fragment_static_test.xml" value="0.33541666666666664" />
+        <entry key="..\:/workspace/ItbirdStudyDemo/app/src/main/res/layout/fragment_test.xml" value="0.16246215943491424" />
+        <entry key="..\:/workspace/ItbirdStudyDemo/app/src/main/res/layout/task_test.xml" value="0.33541666666666664" />
         <entry key="..\:/workspace/MyApplication/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/workspace/MyApplication/app/src/main/res/layout/activity_second.xml" value="0.14492753623188406" />
         <entry key="..\:/workspace/MyApplication/app/src/main/res/layout/eventbus_test.xml" value="0.317481884057971" />

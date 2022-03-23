@@ -14,7 +14,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
         <activity
-            android:name="com.itbird.hook.HookTestActivity"
+            android:name="com.itbird.fragment.FragmenViewPagerTestActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,15 +22,19 @@
             </intent-filter>
         </activity>
 
+        <activity android:name="com.itbird.fragment.FragmentReplaceTestActivity" />
+        <activity android:name="com.itbird.fragment.FragmentHideAndShowTestActivity" />
+
         <service
             android:name="com.itbird.handlerIPC.HandleIPCMusicPlayService"
             android:exported="true"
             android:process=":handlerIPC" />
         <activity android:name="com.itbird.eventbus.EventTest2Activity" />
+
+        <activity android:name="com.itbird.hook.HookTestActivity" />
         <activity android:name="com.itbird.handlerIPC.HandleIPCTestActivity" />
         <activity android:name="com.itbird.binder.BinderClientTestActivity" />
 
-        <activity android:name="com.itbird.fragment.FragmentTestActivity" />
         <activity android:name="com.itbird.task.MainTestActivity" />
         <activity android:name="com.itbird.task.ThirdTestActivity" />
         <activity android:name="com.itbird.task.SecondTestActivity" />

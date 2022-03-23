@@ -17,6 +17,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.itbird.R;
 import com.itbird.task.SecondTestActivity;
 
+/**
+ * binder实践
+ * Created by itbird on 2022/1/31
+ */
 public class BinderClientTestActivity extends AppCompatActivity {
 
     private static final String TAG = BinderClientTestActivity.class.getSimpleName();
