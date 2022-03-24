@@ -128,8 +128,7 @@ public class BlankFragment1 extends Fragment {
 
     @Override
     public void onHiddenChanged(boolean hidden) {
-        Log.d(TAG, "onHiddenChanged");
-
+        Log.d(TAG, "onHiddenChanged = " + hidden);
         super.onHiddenChanged(hidden);
     }
 

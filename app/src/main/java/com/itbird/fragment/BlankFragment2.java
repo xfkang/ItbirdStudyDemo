@@ -103,28 +103,24 @@ public class BlankFragment2 extends Fragment {
     @Override
     public void onDestroyView() {
         Log.d(TAG, "onDestroyView");
-
         super.onDestroyView();
     }
 
     @Override
     public void onDetach() {
         Log.d(TAG, "onDetach");
-
         super.onDetach();
     }
 
     @Override
     public void onAttach(@NonNull Context context) {
         Log.d(TAG, "onAttach");
-
         super.onAttach(context);
     }
 
     @Override
     public void onHiddenChanged(boolean hidden) {
-        Log.d(TAG, "onHiddenChanged");
-
+        Log.d(TAG, "onHiddenChanged = " + hidden);
         super.onHiddenChanged(hidden);
     }
 

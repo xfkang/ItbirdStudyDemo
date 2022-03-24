@@ -19,3 +19,8 @@ Demo name：Android Binder机制详解
 Demo package：com.itbird.fragment
 Demo name：Android Fragment系列（基础知识、源码解读、实战运用）
 博客地址：https://blog.csdn.net/baobei0921/article/details/123545249
+
+ * Created by itbird on 2022/3/24
+Demo package：com.itbird.thread
+Demo name：正確的线程退出方式&守护线程
+博客地址：https://blog.csdn.net/baobei0921/article/details/123711564
