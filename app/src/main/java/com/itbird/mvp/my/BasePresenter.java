@@ -1,33 +1,30 @@
 package com.itbird.mvp.my;
 
+
+import java.lang.ref.WeakReference;
+
 /**
- * Presenter基类
- * Created by itbird on 2022/2/25
+ * Created by itbird on 2022/3/29
  */
-public abstract class BasePresenter<V extends IView> implements IPresenter {
-    V mView;
+public abstract class BasePresenter<V> {
+    WeakReference<V> mIView;
 
-    /**
-     * 绑定view，一般在初始化中调用该方法
-     */
-    @Override
-    public void onAttach(IView view) {
-        mView = (V) view;
+    public void onAttach(V iView) {
+        mIView = new WeakReference<>(iView);
     }
 
-    /**
-     * 断开view，一般在onDestroy中调用
-     */
-    @Override
     public void onDetach() {
-        mView = null;
+        mIView = null;
     }
 
-    /**
-     * 是否与View建立连接
-     * 每次调用业务请求的时候都要出先调用方法检查是否与View建立连接
-     */
+    public V getView() {
+        if (mIView != null) {
+            mIView.get();
+        }
+        return null;
+    }
+
     public boolean isViewAttached() {
-        return mView != null;
+        return mIView != null && mIView.get() != null;
     }
 }

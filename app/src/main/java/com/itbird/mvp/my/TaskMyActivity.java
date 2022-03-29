@@ -1,30 +1,35 @@
 package com.itbird.mvp.my;
 
+import android.os.Bundle;
+import android.util.Log;
+import android.widget.TextView;
+
 import com.itbird.R;
 
-public class TaskMyActivity extends BaseActivity implements TaskMyContract.View {
+
+public class TaskMyActivity extends BaseActivity<TaskMyContract.View, TaskMyPresenter> implements TaskMyContract.View {
 
     private static final String TAG = TaskMyActivity.class.getSimpleName();
-    TaskMyPresenter mPresenter;
+    TextView mTextView;
 
     @Override
-    public int getLayoutID() {
-        return R.layout.mvp_view_test;
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.mvp_view_test);
+        mTextView = findViewById(R.id.textview);
+        Log.e(TAG, TAG + " onCreate");
+
+        mPresenter.loadDataFromModel();
     }
 
     @Override
-    public void initPresenter() {
-        mPresenter = new TaskMyPresenter();
-        mPresenter.onAttach(this);
+    TaskMyPresenter initPresenter() {
+        return new TaskMyPresenter();
     }
 
-    @Override
-    public void initView() {
-
-    }
 
     @Override
     public void updateTextView(String s) {
-
+        mTextView.setText(s);
     }
 }

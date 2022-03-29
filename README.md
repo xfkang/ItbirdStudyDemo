@@ -24,3 +24,8 @@ Demo name：Android Fragment系列（基础知识、源码解读、实战运用�
 Demo package：com.itbird.thread
 Demo name：正確的线程退出方式&守护线程
 博客地址：https://blog.csdn.net/baobei0921/article/details/123711564
+
+ * Created by itbird on 2022/3/29
+Demo package：com.itbird.mvp
+Demo name：mvp框架优化
+博客地址：https://blog.csdn.net/baobei0921/article/details/123795484

@@ -1,5 +1,7 @@
 package com.itbird.fragment;
 
+import static androidx.fragment.app.FragmentPagerAdapter.BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT;
+
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -40,7 +42,8 @@ public class FragmenViewPagerTestActivity extends FragmentActivity implements Vi
         viewPager = findViewById(R.id.viewpager);
         radioGroup = findViewById(R.id.line1);
         radioGroup.setOnCheckedChangeListener(this);
-        myFragmentPagerAdapter = new MyFragmentPagerAdapter(fragmentManager);
+//        myFragmentPagerAdapter = new MyFragmentPagerAdapter(fragmentManager);
+        myFragmentPagerAdapter = new MyFragmentPagerAdapter(fragmentManager, BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT);
         viewPager.setAdapter(myFragmentPagerAdapter);
         viewPager.setCurrentItem(0);
         viewPager.addOnPageChangeListener(this);

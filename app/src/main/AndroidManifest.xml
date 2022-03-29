@@ -14,16 +14,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
         <activity
-            android:name="com.itbird.fragment.FragmentHideAndShowTestActivity"
+            android:name="com.itbird.imageloader.ImageLoaderTestActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity android:name="com.itbird.fragment.FragmentReplaceTestActivity" />
         <activity android:name="com.itbird.fragment.FragmenViewPagerTestActivity" />
+        <activity android:name="com.itbird.fragment.FragmentReplaceTestActivity" />
+        <activity android:name="com.itbird.fragment.FragmentHideAndShowTestActivity" />
 
         <service
             android:name="com.itbird.handlerIPC.HandleIPCMusicPlayService"

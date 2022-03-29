@@ -5,32 +5,35 @@ import android.os.Bundle;
 
 import androidx.annotation.Nullable;
 
+
 /**
- * Activity基类
- * Created by itbird on 2022/2/25
+ * Created by itbird on 2022/3/29
  */
-public abstract class BaseActivity extends Activity implements IView {
+public abstract class BaseActivity<V, T extends BasePresenter<V>> extends Activity {
+    T mPresenter;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(getLayoutID());
-        initPresenter();
-        initView();
+        mPresenter = initPresenter();
+        if (mPresenter != null) {
+            mPresenter.onAttach((V) this);
+        }
     }
 
-    /**
-     * 界面布局id
-     */
-    public abstract int getLayoutID();
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        if (mPresenter != null) {
+            mPresenter.onDetach();
+            mPresenter = null;
+        }
+    }
 
-    /**
-     * 开发者只需关注，去在此方法中，实现presenter初始化
-     */
-    public abstract void initPresenter();
+    public T getPresenter() {
+        return mPresenter;
+    }
 
-    /**
-     * 控件初始化
-     */
-    public abstract void initView();
+
+    abstract T initPresenter();
 }

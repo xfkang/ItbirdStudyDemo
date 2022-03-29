@@ -21,12 +21,20 @@ public class MyFragmentPagerAdapter extends FragmentPagerAdapter {
     Fragment fragment3;
     Fragment fragment4;
 
+    public MyFragmentPagerAdapter(@NonNull FragmentManager fm, int behavior) {
+        super(fm, behavior);
+        fragment1 = BlankFragment1.newInstance("name1", "age1");
+        fragment2 = BlankFragment2.newInstance("name2", "age2");
+        fragment3 = BlankFragment3.newInstance("name3", "age3");
+        fragment4 = BlankFragment4.newInstance("name4", "age4");
+    }
+
     public MyFragmentPagerAdapter(@NonNull FragmentManager fm) {
         super(fm);
         fragment1 = BlankFragment1.newInstance("name1", "age1");
-        fragment2 = BlankFragment1.newInstance("name2", "age2");
-        fragment3 = BlankFragment1.newInstance("name3", "age3");
-        fragment4 = BlankFragment1.newInstance("name4", "age4");
+        fragment2 = BlankFragment2.newInstance("name2", "age2");
+        fragment3 = BlankFragment3.newInstance("name3", "age3");
+        fragment4 = BlankFragment4.newInstance("name4", "age4");
     }
 
     @Override
