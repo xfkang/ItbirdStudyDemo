@@ -36,9 +36,20 @@ dependencies {
     implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     implementation 'com.jakewharton:butterknife:8.8.1'
+    implementation 'com.github.bumptech.glide:glide:+'
     implementation 'org.greenrobot:eventbus:3.1.1'
-    implementation 'com.squareup.okhttp3:okhttp:3.10.0'
+//    annotationProcessor 'org.greenrobot:eventbus-annotation-processor:3.1.1'
+
+    implementation 'com.squareup.okhttp3:okhttp:+'
+
+    implementation project(path: ':bindview-annotation')
+    annotationProcessor project(path: ':bindview-annotation-processor')
+
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+}
+
+tasks.withType(JavaCompile) {
+    options.encoding = "UTF-8"
 }

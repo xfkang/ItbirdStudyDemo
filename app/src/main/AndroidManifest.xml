@@ -14,13 +14,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
         <activity
-            android:name="com.itbird.imageloader.ImageLoaderTestActivity"
+            android:name=".annotation.bindview.v2.BindViewTestV2Activity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="com.itbird.annotation.apt.APtTestActivity" />
+        <activity android:name="com.itbird.glide.GlideTestActivity" />
+        <activity android:name="com.itbird.imageloader.ImageLoaderTestActivity" />
         <activity android:name="com.itbird.fragment.FragmenViewPagerTestActivity" />
         <activity android:name="com.itbird.fragment.FragmentReplaceTestActivity" />
         <activity android:name="com.itbird.fragment.FragmentHideAndShowTestActivity" />
