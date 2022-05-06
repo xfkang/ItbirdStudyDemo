@@ -14,14 +14,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
         <activity
-            android:name=".annotation.bindview.v2.BindViewTestV2Activity"
+            android:name="com.itbird.annotation.bindview.v3.BindViewTestV3Activity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.itbird.annotation.apt.APtTestActivity" />
         <activity android:name="com.itbird.glide.GlideTestActivity" />
         <activity android:name="com.itbird.imageloader.ImageLoaderTestActivity" />
         <activity android:name="com.itbird.fragment.FragmenViewPagerTestActivity" />
@@ -32,6 +31,7 @@
             android:name="com.itbird.handlerIPC.HandleIPCMusicPlayService"
             android:exported="true"
             android:process=":handlerIPC" />
+
         <activity android:name="com.itbird.eventbus.EventTest2Activity" />
 
         <activity android:name="com.itbird.hook.HookTestActivity" />

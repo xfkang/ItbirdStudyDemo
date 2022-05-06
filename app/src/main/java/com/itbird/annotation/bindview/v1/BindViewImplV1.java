@@ -2,7 +2,9 @@ package com.itbird.annotation.bindview.v1;
 
 import android.app.Activity;
 import android.text.TextUtils;
-import com.itbird.bindview_annotation.ItbirdRunningBinderView;
+
+import com.itbird.bindview.annotation.ItbirdRunningBinderView;
+
 import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;

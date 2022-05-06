@@ -6,7 +6,7 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.itbird.R;
-import com.itbird.bindview_annotation.ItbirdAopBinderView;
+import com.itbird.bindview.annotation.ItbirdAopBinderView;
 
 /**
  * 运行时注解+反射实现 view ioc框架

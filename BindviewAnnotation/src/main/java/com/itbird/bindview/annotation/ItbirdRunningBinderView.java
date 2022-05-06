@@ -1,4 +1,4 @@
-package com.itbird.bindview_annotation;
+package com.itbird.bindview.annotation;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
@@ -7,11 +7,11 @@ import java.lang.annotation.Target;
 
 /**
  * 注解
- * 只在编译期间存在
+ * 在JVM运行期间，依然存在
  * Created by itbird on 2022/4/11
  */
-@Retention(RetentionPolicy.CLASS)
+@Retention(RetentionPolicy.RUNTIME)
 @Target({ElementType.FIELD, ElementType.TYPE})
-public @interface ItbirdAopBinderView {
+public @interface ItbirdRunningBinderView {
     int value();
 }

@@ -14,5 +14,5 @@ dependencyResolutionManagement {
 }
 rootProject.name = "ItbirdStudyDemo"
 include ':app'
-include ':bindview-annotation-processor'
-include ':bindview-annotation'
+include ':BindviewAnnotation'
+include ':BindviewAnnotationProcessor'
