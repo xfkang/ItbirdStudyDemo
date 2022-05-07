@@ -14,7 +14,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
         <activity
-            android:name="com.itbird.annotation.bindview.v3.BindViewTestV3Activity"
+            android:name="com.itbird.annotation.bindview.v4.BindViewTestV4Activity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

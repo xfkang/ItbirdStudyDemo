@@ -9,7 +9,7 @@ import com.itbird.R;
 import com.itbird.bindview.annotation.ItbirdAopBinderView;
 
 /**
- * 运行时注解+反射实现 view ioc框架
+ * 编译注解+APT+JAVAPoet+反射实现 view ioc框架
  */
 @ItbirdAopBinderView(R.layout.bindview_test)
 public class BindViewTestV2Activity extends AppCompatActivity {

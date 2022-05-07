@@ -8,13 +8,13 @@ import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.itbird.R;
+import com.itbird.bindViewruntime.ItbirdBindView;
+import com.itbird.bindview.annotation.ItbirdAopBinderView;
 
 import org.greenrobot.eventbus.EventBus;
 import org.greenrobot.eventbus.Subscribe;
 import org.greenrobot.eventbus.ThreadMode;
 
-import butterknife.BindView;
-import butterknife.ButterKnife;
 
 /**
  * Created by itbird on 2022/3/1
@@ -22,16 +22,16 @@ import butterknife.ButterKnife;
 
 
 public class EventTestActivity extends AppCompatActivity {
-    @BindView(R.id.button)
+    @ItbirdAopBinderView(R.id.button)
     Button button;
-    @BindView(R.id.textview)
+    @ItbirdAopBinderView(R.id.textview)
     Button textview;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.eventbus_test);
-        ButterKnife.bind(this);
+        ItbirdBindView.bind(this);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
